@@ -1,6 +1,8 @@
 // components
 import { Input } from "@/components/ui/input";
 
+
+
 const FilterPrice = () => {
   return (
     <>
