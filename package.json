@@ -10,7 +10,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "clean": "rimraf .next node_modules/.prisma"
+    "clean": "rimraf .next node_modules/.prisma",
+    "studio": "npx prisma studio"
   },
   "dependencies": {
     "@auth/prisma-adapter": "^2.10.0",
