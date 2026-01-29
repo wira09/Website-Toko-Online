@@ -2,6 +2,10 @@ import BaseResponse from "@/types/response";
 import { Product } from "@prisma/client";
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/dist/query/react";
 
+interface ProductResponse extends BaseResponse {
+  data: Product;
+}
+
 interface ProductsResponse extends BaseResponse {
   data: {
     total: number;
@@ -36,6 +40,11 @@ export const prodctApi = createApi({
         },
       }),
     }),
+    getProductById: builder.query<ProductResponse, string>({
+      query: (id) => ({
+        url: `/${id}`
+      })
+    })
   }),
 });
 
