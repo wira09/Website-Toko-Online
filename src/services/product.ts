@@ -48,4 +48,4 @@ export const prodctApi = createApi({
   }),
 });
 
-export const { useGettAllProductsQuery } = prodctApi;
+export const { useGettAllProductsQuery, useGetProductByIdQuery } = prodctApi;
